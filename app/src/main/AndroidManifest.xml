@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.printer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <supports-screens android:anyDensity="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:icon="@drawable/abc_ab_share_pack_holo_light"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".bluetoothprinter"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
